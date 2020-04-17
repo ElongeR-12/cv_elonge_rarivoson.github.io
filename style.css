@@ -1,17 +1,17 @@
 /*
 GLOBAL
 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
-
+html {
+    font-family: 'Open Sans', sans-serif;
+    }
 body {
-    font-family             : 'Roboto', sans-serif;
     color                   : black;
     margin                  : auto;
-    border                  : 2px solid #2700ff;
+    border                  : 2px solid #8e826b;
     width                   : 1186px;
     max-width               : 100%;
-    padding                 : auto;
 }
 
 header div .logo_section {
@@ -24,7 +24,7 @@ header div .logo_section {
 header div .logo_section img {
     width                   : 216px;
     height                  : 216px;
-    border                  : 4px solid #2700ff;
+    border                  : 4px solid #8e826b;
     border-radius           : 50%;
     -webkit-border-radius   : 50%;
     -moz-border-radius      : 50%;
@@ -41,14 +41,14 @@ main aside address {
 
 main aside address p,
 main aside .description_section .description,
-footer .footer_child1 p {
+footer .footer_child1 p, footer.footer_child1 .hobbies {
     text-align              : center;
     background-color        : #333333;
-    color                   : #00fff3;
+    color                   : #ffcc00;
     padding-top             : 16px;
     padding-bottom          : 8px;
     font-style              : normal;
-    font-weight             : 4px;
+    font-weight             : bold;
     margin-top              : 0px;
     font-size               : 20px;
     margin-bottom           : 36px;
@@ -78,8 +78,7 @@ main aside address ul li {
 main aside .description_section p {
     font-size               : large;
     line-height             : 17px;
-    font-family             : auto;
-    font-weight             : 1px;
+    font-weight             : normal;
     padding-left            : 48px;
     padding-right           : 48px;
     text-align              : justify;
@@ -90,7 +89,6 @@ main .content section,
 footer .reference_title {
     padding-left            : 65px;
     padding-right           : 65px;
-    font-family             : auto;
     font-size               : large;
 }
 
@@ -117,7 +115,7 @@ header .header_child2 h1 {
 
 header .header_child2 h1 span {
     font-weight             : 400;
-    color                   : #2700ff;
+    color                   : #ffcc00;
 }
 
 .position {
@@ -136,16 +134,16 @@ header .header_child2 .little_surline {
 }
 
 hr {
-    border                  : 2px solid #2700ff;
+    border                  : 2px solid #736b49;
 }
 
 /*
-contenu
+Contenu
 */
 
 .fas,
 .far {
-    color                   : #2700ff;
+    color                   : #736b49;
 }
 
 .fa-graduation-cap,
@@ -159,10 +157,11 @@ contenu
 
 h2 {
     font-size               : 23px;
-    font-weight             : 4px;
+    font-weight             : bold;
     letter-spacing          : 2px;
     text-transform          : uppercase;
 }
+
 
 h3 {
     font-size               : 18px;
@@ -172,8 +171,7 @@ h3 {
 .profession_title,
 .formation_area .date_region,
 .profession_area .date_region,
-.reference_title,
-footer .footer_child1 .hobbies_list {
+.reference_title {
     text-align              : left;
     padding                 : 0;
     margin                  : 0;
@@ -226,8 +224,8 @@ footer ul li {
 .formation_area,
 .profession_area {
     width                   : 100%;
+    margin                  : 46px 0;
     overflow                : hidden;
-    margin                  : 46px 0px;
 }
 
 header,
@@ -243,8 +241,6 @@ footer,
     width                   : 100%;
     overflow                : hidden;
     margin                  : 53px 0px 30px 53px;
-    font-family             : auto;
-    font-size               : larger;
 }
 
 .formation_area div:nth-child(2n+1),
@@ -267,7 +263,7 @@ footer .footer_child1,
 header .header_child1,
 main aside {
     width                   : 32%;
-    background-color        : #00fff3;
+    background-color        : #e3ddc2;
 }
 
 footer .footer_child2,
@@ -287,8 +283,8 @@ main .content {
 
 footer .reference_area p {
     padding                 : 0;
-    margin                  : 20px;
-    line-height             : 22px;
+    margin                  : 4px;
+    line-height             : 19px;
 }
 
 footer .footer_child1 {
@@ -297,8 +293,10 @@ footer .footer_child1 {
 
 footer .hobbies_section {
     position                : absolute;
-    top                     : 80px;
+    top                     : 20px;
 }
+
+
 
 .fa-biking,
 .fa-swimmer,
@@ -332,12 +330,13 @@ a,
 
 .name_ref {
     font-weight             : 600;
+    text-transform          : uppercase;
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 992.98px) {
-
     body {
+        /* pour enlever le scrool horieontal*/
         width               : auto;
         margin              : unset;
     }
@@ -434,10 +433,6 @@ a,
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
-    main .content section {
-        padding-right       : 0px;
-        padding-left        : 0px;
-    }
 
     .formation_area div:nth-child(2n+1),
     .formation_area div:nth-child(2n),
@@ -446,6 +441,10 @@ a,
         width               : 100%;
     }
 
+    main .content section {
+        padding-left        : 0px;
+        padding-right       : 0px
+    }
 
     header .header_child2 .big_title,
     main aside address ul {
